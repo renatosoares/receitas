@@ -8,11 +8,13 @@ function splitString(){
 	// processa a divisão nas vírgulas
 
 	for (var i = 0; i < arrayTokens.length; i++) {
-		
-		document.writeln(arrayTokens[i] + "<br />");
+
+		document.getElementById('valordivide' + i).innerHTML = arrayTokens[i] + "<br />";
+		//document.writeln(arrayTokens[i] + "<br />");
 		// agora divide em iguais e grava apenas o valor
 		var newTokens = arrayTokens[i].split('=');
-		document.writeln(newTokens[1] + "<br /><br />");
+		document.getElementById('divide' + i).innerHTML = newTokens[1] + "<br /><br />";
+		//document.writeln(newTokens[1] + "<br /><br />");
 
 
 	}
